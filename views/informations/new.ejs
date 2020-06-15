@@ -9,25 +9,30 @@
     
     <form action="/informations" method="POST">
       <label>NAME
-        <input type="text" name="optionsList">
+        <input type="text" name="name">
       </label>
       
       <label>BIRTHDAY
-        <input type="text" name="optionsList">
+        <input type="datetime-local" name="birthday">
       </label>
   
       <label>PHONE NUMBER
-        <input type="text" name="optionsList">
+        <input type="text" name="phoneNumber">
       </label>
       
       <label>EMAIL
-        <input type="text" name="optionsList">
+        <input type="text" name="email">
       </label>
       
       <label>NOTE
-        <input type="text" name="optionsList">
+        <input type="text" name="note">
       </label>
-      <a href="/informations">Informations</a>
+      
+      <!-- <div class="submit"> -->
+        <input type="submit" value="Submit Information">
+      <!-- </div> -->
+        <!-- <a href="/informations">Informations</a> -->
+      <!-- </div> -->
     </form>
   </body>
 </html>
