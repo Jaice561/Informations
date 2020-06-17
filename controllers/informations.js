@@ -12,15 +12,15 @@ function newInformation(req, res) {
 
 function create(req, res) {
 const information = new Information(req.body);
-    information.user = req.user._id;
+    // information.user = req.user._id;
     information.save(function(err) {
         if (err) return res.render('informations/new');
-        res.redirect('/informations');
+        res.redirect('informations/new');
     })
 }
 
 function index(req, res) {
-    Information.find({user: req.user._id}, function(err, informations) {
+    Information.find({}, function(err, informations) {
         res.render('informations/index', {informations});
     })
 }
